@@ -37,4 +37,13 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}s
+}
+
+.page-header{
+    border-bottom: 1px solid #333;
+}
+
+.tocenter{
+    width: 300;
+    margin: 0 auto;
+}
