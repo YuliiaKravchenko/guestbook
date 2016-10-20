@@ -8,6 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="_token" content="{{csrf_token()}}"/><!---->
     <link rel="icon" href="../../favicon.ico">
 
     <title>Signin for GuestBook</title>
@@ -40,6 +41,7 @@
       <ul class="nav navbar-nav">
         <li><a href="{{url('/')}}">Main</a></li>
         <li><a href="{{url('/top/books')}}">Top</a></li>
+        <li><a href="{{url('/authors')}}">Authors</a></li>
       </ul>
     </div>
   </div>
@@ -50,6 +52,13 @@
         @yield('content')
 
     </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/js/angular/app.js"></script>
+<script src="/js/angular/controllers/authors.js"></script>
+<!--<script src="/js/main.js"></script>подключение для задания без angular, закомментировано для выполнение задания 2 вариантом-->
 
 </body>
 

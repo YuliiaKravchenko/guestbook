@@ -14,3 +14,9 @@
 Route::get('/',"DefaultController@index");
 Route::post('/',"DefaultController@index");
 Route::get('/top/{top}/{period?}',"TopController@index");
+Route::get('/authors',"AuthorController@index");
+
+//API Routs
+Route::get('/api/authors',"Api\AuthorsController@index");
+Route::post('/api/authors/new',"Api\AuthorsController@insert");
+
